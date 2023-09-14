@@ -52,7 +52,16 @@ spider.py get http://www.vesti.ru/ -n 2
 * Оптимизация полученного решения по скорости/памяти
 * Docker multistage build
 * Написать тесты при помощи `pytest`/`unittest` и любой другой на ваш выбор
-    
+
+### Оценка решения
+
+Приоритет факторов при оценивании решения:
+- Оптимальность, надежность и отказоустройчивость
+- Архитектура полученного решения
+- Скорость решения поставленной задачи (сколько часов, дней, недель понадобилось для разработчику)
+- Качество и чистота предоставляемого кода на `python`
+- Количество решенных доп. задачи (из раздела с плюсом)
+
 ## Как начать выполнение тестового задания?
 
 Для выполнения задания лучше всего использовать данный репозиторий как шаблон, для чего просто перейдите по [**этой ссылке**][use_this_repo_template].
@@ -78,10 +87,7 @@ $ docker-compose run --rm app ./app
 
 > Если в процессе выполнения у вас возникнут какие-либо неразрешимые вопросы - создайте [соответствующий issue][link_create_issue] в данном репозитории. На вопросы касательно деталей реализации ("А лучше так и так?") - вероятнее всего вы получите ответ "Как вы посчитаете правильнее".
 
-[badge_build]:https://github.com/isphere-ru/python-developer-test-task/workflows/CI/badge.svg
-[badge_language]:https://img.shields.io/badge/python-3-yellow?longCache=true
-[badge_docker]:https://img.shields.io/badge/docker-enable-blue?longCache=true
-[badge_use_template]:https://img.shields.io/badge/start-this_template_using-success.svg?longCache=true
-[link_build]:https://github.com/isphere-ru/python-developer-test-task/actions
-[link_create_issue]:https://github.com/isphere-ru/python-developer-test-task/issues/new
-[use_this_repo_template]:https://github.com/isphere-ru/python-developer-test-task/generate
+[badge_build]:https://github.com/isphere-ru/python-dev-test-task-lvl2/workflows/CI/badge.svg
+[link_build]:https://github.com/isphere-ru/python-dev-test-task-lvl2/actions
+[link_create_issue]:https://github.com/isphere-ru/python-dev-test-task-lvl2/issues/new
+[use_this_repo_template]:https://github.com/isphere-ru/python-dev-test-task-lvl2/generate
