@@ -1,13 +1,8 @@
-# Тестовое задание для python-разработчика
-
-![Project language][badge_language]
-![Docker][badge_docker]
-[![Build Status][badge_build]][link_build]
-[![Do something awesome][badge_use_template]][use_this_repo_template]
+# Тестовое задание для Python разработчика команды ООО "ИНФО СФЕРА"
 
 ### Описание
 
-Реализовать сервис, который обходит произвольный сайт с глубиной до 2 и сохраняет `html`, `url` и `title` страницы в хранилище.
+Реализовать сервис, который обходит произвольный сайт с глубиной до depth (2-10, задается аргументом depth) и сохраняет `html`, `url` и `title` страницы в хранилище.
 
 Примеры сайтов:
 
@@ -27,8 +22,8 @@
 
 ### CLI
 
-* По урлу сайта и глубине обхода загружаются данные.
-* По урлу сайта из хранилища можно получить `n` прогруженных страниц (`url` и `title`).
+* По URL сайта и глубине обхода загружаются данные.
+* По URL сайта из хранилища можно получить `n` прогруженных страниц (`url` и `title`).
     
 Пример:
 
@@ -42,7 +37,8 @@ spider.py get http://www.vesti.ru/ -n 2
 
 ### Требования
 
-* Язык реализации `python3.6+`
+* Язык реализации `python3.7+`
+* Использование классов, ООП
 * Выбор хранилища произвольный (`PostgreSQL`/`Redis`/`ElasticSearch` и любой другой на ваш выбор) 
 * Стек технологий произвольный
 * Выбор библиотек произвольный
@@ -51,8 +47,10 @@ spider.py get http://www.vesti.ru/ -n 2
 
 ### Было бы большим плюсом
 
+* Использование асинхронности/параллельности
+* Использование алгоритмов и структуры данных, оптимально подходящих под данное задание так и на уровне Python, так и в БД
+* Оптимизация полученного решения по скорости/памяти
 * Docker multistage build
-* Run Docker as a non-root user  
 * Написать тесты при помощи `pytest`/`unittest` и любой другой на ваш выбор
     
 ## Как начать выполнение тестового задания?
@@ -80,10 +78,10 @@ $ docker-compose run --rm app ./app
 
 > Если в процессе выполнения у вас возникнут какие-либо неразрешимые вопросы - создайте [соответствующий issue][link_create_issue] в данном репозитории. На вопросы касательно деталей реализации ("А лучше так и так?") - вероятнее всего вы получите ответ "Как вы посчитаете правильнее".
 
-[badge_build]:https://github.com/avtocod/python-developer-test-task/workflows/CI/badge.svg
+[badge_build]:https://github.com/kovinevmv/python-developer-test-task/workflows/CI/badge.svg
 [badge_language]:https://img.shields.io/badge/python-3-yellow?longCache=true
 [badge_docker]:https://img.shields.io/badge/docker-enable-blue?longCache=true
 [badge_use_template]:https://img.shields.io/badge/start-this_template_using-success.svg?longCache=true
-[link_build]:https://github.com/avtocod/python-developer-test-task/actions
-[link_create_issue]:https://github.com/avtocod/python-developer-test-task/issues/new
-[use_this_repo_template]:https://github.com/avtocod/python-developer-test-task/generate
+[link_build]:https://github.com/kovinevmv/python-developer-test-task/actions
+[link_create_issue]:https://github.com/kovinevmv/python-developer-test-task/issues/new
+[use_this_repo_template]:https://github.com/kovinevmv/python-developer-test-task/generate
